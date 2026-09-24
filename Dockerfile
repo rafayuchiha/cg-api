@@ -11,8 +11,7 @@ WORKDIR /app
 
 # Copy requirements file
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirment.txt fastapi uvicorn python-multipart
-
+RUN pip install --no-cache-dir -r requirements.txt fastapi uvicorn python-multipart
 # Download model.h5 directly from your GitHub Release
 RUN curl -L -o model.h5 "https://github.com/rafayuchiha/cg-api/releases/download/v1.0/model.h5"
 
