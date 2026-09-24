@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: abdulrafay69/ecg-api:latest
+          tags: abdulrafay69/ecg-api:v1.1
