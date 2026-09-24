@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy requirements file
-COPY requirment.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirment.txt fastapi uvicorn python-multipart
 
 # Download model.h5 directly from your GitHub Release
